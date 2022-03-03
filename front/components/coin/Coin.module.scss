@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+  p {
+    margin: 0;
+  }
+  .col_logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .col_logo__name {
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+  .col_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-size: 0.75rem;
+    }
+    .price {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+  .col_balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    .title {
+      font-size: 0.75rem;
+    }
+    .balance {
+      font-size: 1.2rem;
+    }
+    .total {
+      font-size: 0.75rem;
+      color: #757575;
+    }
+  }
+}
