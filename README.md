@@ -3,9 +3,9 @@
 ## Getting started API
 
 Run the script below within the directory to create the virtual environment:<br/>
-python3 -m venv env <br/>
+    python3 -m venv env
 To activate the virtual environment, run the following:<br/>
-source env/bin/activate
+    source env/bin/activate
 
 ## Install dependencies:
 
@@ -18,6 +18,7 @@ source env/bin/activate
     
     - python -m unittest tests
 ## API Documentation
+    [Link](https://documenter.getpostman.com/view/3793510/UVktqtuv)
     -https://documenter.getpostman.com/view/3793510/UVktqtuv
     
 ## Getting started Front
