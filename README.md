@@ -18,8 +18,8 @@ To activate the virtual environment, run the following:<br/>
     
     - python -m unittest tests
 ## API Documentation
-    [Link](https://documenter.getpostman.com/view/3793510/UVktqtuv)
-    -https://documenter.getpostman.com/view/3793510/UVktqtuv
+   [Link](https://documenter.getpostman.com/view/3793510/UVktqtuv)
+   https://documenter.getpostman.com/view/3793510/UVktqtuv
     
 ## Getting started Front
 
