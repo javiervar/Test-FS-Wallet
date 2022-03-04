@@ -30,7 +30,6 @@ const Buy: NextPage = () => {
 
     purchase(formData)
       .then((res) => {
-        console.log(res);
         const { purchased_amount } = res.details;
         alert(`Total ${data.coin} purchased = ${purchased_amount}`);
       })
