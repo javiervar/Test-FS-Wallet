@@ -23,7 +23,9 @@ const NavBar = () => {
         },
         style: {
           barStyles: {
-            background: '#444'
+            background: '#1a76d2',
+            boxShadow: 'none',
+            border: 'unset',
           },
           sidebarStyles: {
             background: '#222',

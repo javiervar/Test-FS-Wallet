@@ -11,21 +11,9 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   .title {
     margin: 0;
-    font-weight: 200;
-  }
-  .subtitle {
-    margin: 0;
     font-weight: 500;
     font-size: 3.5rem;
+    text-align: center;
   }
-  button {
-    width: 8rem;
-    height: 2.5rem;
-    border: unset;
-    background-color: #fff;
-    font-weight: bold;
-    font-family: "Roboto";
-    margin-top: 1rem;
-    cursor: pointer;
-  }
+ 
 }

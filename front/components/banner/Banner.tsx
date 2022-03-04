@@ -4,16 +4,11 @@ import React from 'react';
 
 export interface IBanner{
     title:string;
-    total:number;
-    onBtnClick(): any;
 }
 
-const Banner:React.FC<IBanner>=({title,total=0,onBtnClick})=>{
+const Banner:React.FC<IBanner>=({title})=>{
     return <div className={styles.banner}>
-    <p className={styles.title}>{title}</p>
-    <p className={styles.subtitle}>{`$${total} MXN`}</p>
-    <button onClick={onBtnClick}>Buy</button>
-   
+    <p className={styles.title}>{title}</p>   
   </div>
 }
 

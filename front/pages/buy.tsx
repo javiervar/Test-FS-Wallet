@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useForm } from "react-hook-form";
 import styles from "../styles/Buy.module.scss";
 import MainLayout from "../layouts/mainLayout/main.layout";
-
+import Banner from "../components/banner/Banner";
 const Buy: NextPage = () => {
   const {
     register,
@@ -16,6 +16,7 @@ const Buy: NextPage = () => {
 
   return (
     <MainLayout>
+      <Banner title="Buy Crypto in minutes"/>
       <div className={styles.container}>
         <div className={styles.form__container}>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -28,18 +29,18 @@ const Buy: NextPage = () => {
             {errors.address && (
               <span className={styles.error}>This field is required</span>
             )}
-            <label>Coin:</label>
+            <label>I want to buy:</label>
             <select {...register("coin")}>
               <option value="bitcoin">Bitcoin ($2000000 mxn)</option>
             </select>
-            <label>Amount (MXN):</label>
+            <label>I want to spend (MXN):</label>
             <input
               type="number"
               {...register("mxn_amount", { required: true })}
             />
             {errors.mxn_amount && <span>This field is required</span>}
 
-            <input type="submit" />
+            <button type="submit">Continue</button>
           </form>
         </div>
       </div>
