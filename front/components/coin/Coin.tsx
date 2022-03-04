@@ -1,8 +1,10 @@
 import React from "react";
+import Image from 'next/image'
 import styles from "./Coin.module.scss";
-const BitcoinIcon = require("../../assets/img/bitcoin.png");
-const EtherumIcon =require("../../assets/img/etherum.png");
-const  SolanaIcon = require( "../../assets/img/solana.png");
+import BitcoinIcon  from "../../assets/img/bitcoin.png";
+import EtherumIcon from '../../assets/img/etherum.png';
+import SolanaIcon from '../../assets/img/solana.png';
+
 
 export interface ICoin {
   name: string;
@@ -12,9 +14,9 @@ export interface ICoin {
 const Coin: React.FC<ICoin> = ({ name="", price = 0 }) => {
   const renderImage = ()=> {
     const coins: { [key: string]: ReactElement; }= {
-        'bitcoin': <img src={BitcoinIcon} alt={name} />,
-        'etherum':<img src={EtherumIcon} alt={name} />,
-        'solana':<img src={SolanaIcon} alt={name} />,
+        'bitcoin': <Image src={BitcoinIcon} alt={name} width="50px" height="50px"/>,
+        'ethereum':<Image src={EtherumIcon} alt={name} width="50px" height="50px"/>,
+        'solana':<Image src={SolanaIcon} alt={name} width="50px" height="50px"/>,
      }
     return  coins[name.toLowerCase()] ?? null;
   };

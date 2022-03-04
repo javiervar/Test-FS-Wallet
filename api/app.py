@@ -1,11 +1,13 @@
 from flask import Flask
 from src.routes import api
+from flask_cors import CORS
 
 
 def create_app(config_file=None):
     app = Flask(__name__)
 
     app.config.from_pyfile(config_file)
+    CORS(app)
 
     from src.extensions import mongodb_client
     mongodb_client.init_app(app)

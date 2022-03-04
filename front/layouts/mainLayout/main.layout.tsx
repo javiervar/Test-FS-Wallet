@@ -1,5 +1,6 @@
 import styles from './MainLayout.module.scss';
 import NavBar from '../../components/navbar/NavBar'
+
 type MainLayoutProps={
     children:React.ReactNode
 }
